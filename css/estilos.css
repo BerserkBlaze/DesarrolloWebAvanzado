@@ -1,0 +1,21 @@
+.middiv{
+    display: inline-block;  
+    padding-bottom: 1cm;  
+}
+
+.middiv{
+    display: inline-block;
+}
+
+#social_media{
+    position: relative;
+    top: -135px;
+    padding-left: 100px;
+    }
+    
+    ul{
+        border: solid 1px;
+        border-style: solid;
+        border-radius: 20%;
+        background-color: white;
+    }
