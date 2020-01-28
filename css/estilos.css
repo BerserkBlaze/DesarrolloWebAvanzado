@@ -1,0 +1,9 @@
+.foot{
+    text-indent: 50px;    
+}
+
+#fechafoot{
+    position: relative;
+    top: -50px;
+    left: 250px;
+}
