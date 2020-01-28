@@ -1,0 +1,27 @@
+.headerdiv{
+    display: inline-block; 
+    padding-bottom: 1.5cm;   
+    padding-top: 0.5cm;
+    padding-left: 1cm;
+}
+
+#perfil{
+    position: relative;
+    left: 400px;
+    top: -100px;
+    font-size: 30px;
+}
+
+#articulos{
+    position: relative;
+    left: 450px;
+    top: -100px;
+    font-size: 30px;
+}
+
+#contacto{
+    position: relative;
+    left: 500px;
+    top: -100px;
+    font-size: 30px;
+}
