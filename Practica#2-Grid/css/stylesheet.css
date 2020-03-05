@@ -1,0 +1,304 @@
+/* html {
+    margin: 0;
+        box-sizing: border-box;
+    font-size: 3em;
+}
+ */
+
+
+/* *,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+* {
+    margin: 0;
+}
+
+.mainbanner {
+    width: 1310px;
+    height: 800px;
+    background-image: url(../img/banner1.jpg);
+    margin-bottom: 30px;
+}
+
+.ptext {
+    position: relative;
+}
+
+#h1banner1 {
+    position: absolute;
+    top: -450px;
+    left: 100px;
+}
+
+#h2banner1 {
+    position: absolute;
+    top: -410px;
+    left: 100px;
+}
+
+#h3banner1 {
+    position: absolute;
+    top: -380px;
+    left: 100px;
+}
+
+#prebanner1 {
+    position: absolute;
+    top: -350px;
+    left: 100px;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.white {
+    color: white;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 100px;
+    top: -30px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.icono {
+    position: relative;
+    left: 200px;
+    margin: 10px;
+}
+
+#navnav {
+    position: relative;
+    top: -360px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    /* opacity: .6; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.opacity {
+    opacity: .5;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 150px); */
+    grid-template-columns: 100px repeat(4, 250px) 100px;
+    grid-template-rows: repeat(2, 100px) repeat(3, 200px) repeat(2, 100px) repeat(2, 200px);
+    grid-template-areas: '. texto1 texto1 texto1 texto1 .' '. raya1 raya1 raya1 raya1 .' '. area1 area1 area1 area2 .' '. area1 area1 area1 area3 .' '. area4 area5 area6 area7 .' '. texto2 texto2 texto2 texto2 .' '. raya2 raya2 raya2 raya2 .' '. area8 area8 area9 area10 .' '. area11 area12 area12 area10 .';
+    grid-gap: 20px;
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.raya1 {
+    grid-area: raya1;
+}
+
+.area1 {
+    grid-area: area1;
+    background-image: url(../img/area11.jpg);
+    background-position: 0px -80px;
+}
+
+#loremar1 {
+    position: relative;
+    left: -130px;
+    top: 80px;
+}
+
+#dummyar1 {
+    position: relative;
+    left: -300px;
+    top: 110px;
+}
+
+#par1 {
+    position: relative;
+    left: -475px;
+    top: 140px;
+    color: white;
+}
+
+.area2 {
+    grid-area: area2;
+    background-image: url(../img/bannerar2.jpg);
+    background-position: -30px;
+}
+
+.area3 {
+    grid-area: area3;
+    background-image: url(../img/bannerar3.jpg);
+    background-position: 0px 15px;
+}
+
+.area4 {
+    grid-area: area4;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bannerar4.jpg);
+    background-position: -40px -20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.area5 {
+    grid-area: area5;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bannerar5.jpg);
+    background-position: 0px -70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.area6 {
+    grid-area: area6;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bannerar6.jpg);
+    background-position: -30px -0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.area7 {
+    grid-area: area7;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bannerar7.jpg);
+    background-position: 0px -80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.raya2 {
+    grid-area: raya2;
+}
+
+.area8 {
+    grid-area: area8;
+    background-image: url(../img/bannerar8.png);
+}
+
+.area9 {
+    grid-area: area9;
+    background-image: url(../img/bannerar9.jpg);
+    background-position: -0px -140px;
+}
+
+.area10 {
+    grid-area: area10;
+    background-image: url(../img/bannerar10.jpg);
+    background-position: 0px -20px;
+}
+
+.area11 {
+    grid-area: area11;
+    background-image: url(../img/bannerar11.jpg);
+    background-position: -5px -30px;
+}
+
+.area12 {
+    grid-area: area12;
+    background-image: url(../img/bannerar12.jpg);
+}
+
+#navfoot {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 100px 450px 450px 100px 100px;
+    grid-template-rows: 170px;
+    grid-template-areas: '. lorem1foot lorem2foot circle .';
+    width: 100%;
+    background-color: black;
+}
+
+.margin {
+    margin: 50px;
+}
+
+.lorem1foot {
+    grid-area: lorem1foot;
+}
+
+
+/* #dummyfoot {
+    position: relative;
+    top: 100px;
+} */
+
+.lorem2foot {
+    grid-area: lorem2foot;
+}
+
+
+/* .content-circle {
+    position: relative;
+} */
+
+.circle {
+    /*     position: absolute; */
+    /*     display: flexbox; */
+    grid-area: circle;
+    position: relative;
+}
+
+#cleder {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+
+.content-circle {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.item {
+    /* border: 1px solid;
+    background-color: hsl(60deg, 100%, 50%);
+    color: hsl(0deg, 20%, 40%); */
+    font-weight: 900;
+    /* flexbox: center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .mainbanner {
+        width: 900px;
+    }
+    .container {
+        grid-template-columns: 100px repeat(2, 250px) 100px;
+        grid-template-rows: 100px repeat(9, 200px) 100px 200px;
+        grid-template-areas: '. texto1 texto1 .' '. area1 area1 .' '. area1 area1 .' '. area1 area1 .' '. area2 area3 .' '. area4 area5 .' '. area4 area5 .' '. area6 area7 .' '. area6 area7 .' '. texto2 texto2 .' '. area12 area12 .';
+        grid-gap: 10px;
+    }
+    #navfoot {
+        width: 900px;
+    }
+}
