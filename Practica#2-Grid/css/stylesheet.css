@@ -17,7 +17,7 @@
 }
 
 .mainbanner {
-    width: 1310px;
+    width: 100%;
     height: 800px;
     background-image: url(../img/banner1.jpg);
     margin-bottom: 30px;
@@ -118,22 +118,26 @@ a {
     background-position: 0px -80px;
 }
 
+#padrear1 {
+    position: relative;
+}
+
 #loremar1 {
     position: relative;
-    left: -130px;
-    top: 80px;
+    top: 70px;
+    left: -200px;
 }
 
 #dummyar1 {
-    position: relative;
-    left: -300px;
-    top: 110px;
+    position: absolute;
+    top: 100px;
+    left: -200px;
 }
 
 #par1 {
-    position: relative;
-    left: -475px;
-    top: 140px;
+    position: absolute;
+    top: 130px;
+    left: -200px;
     color: white;
 }
 
@@ -194,32 +198,44 @@ a {
     grid-area: raya2;
 }
 
+.oculto {
+    display: none;
+}
+
 .area8 {
     grid-area: area8;
     background-image: url(../img/bannerar8.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .area9 {
     grid-area: area9;
     background-image: url(../img/bannerar9.jpg);
-    background-position: -0px -140px;
+    background-size: cover;
+    background-position: center;
 }
 
 .area10 {
     grid-area: area10;
     background-image: url(../img/bannerar10.jpg);
-    background-position: 0px -20px;
+    background-size: cover;
+    background-position: center;
 }
 
 .area11 {
     grid-area: area11;
     background-image: url(../img/bannerar11.jpg);
-    background-position: -5px -30px;
+    /* background-position: -5px -30px; */
+    background-size: cover;
+    background-position: center;
 }
 
 .area12 {
     grid-area: area12;
     background-image: url(../img/bannerar12.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #navfoot {
@@ -229,7 +245,7 @@ a {
     grid-template-rows: 170px;
     grid-template-areas: '. lorem1foot lorem2foot circle .';
     width: 100%;
-    background-color: black;
+    background-color: rgba(26, 26, 26, 1);
 }
 
 .margin {
@@ -292,13 +308,69 @@ a {
     .mainbanner {
         width: 900px;
     }
+    hr {
+        display: none;
+    }
     .container {
         grid-template-columns: 100px repeat(2, 250px) 100px;
         grid-template-rows: 100px repeat(9, 200px) 100px 200px;
-        grid-template-areas: '. texto1 texto1 .' '. area1 area1 .' '. area1 area1 .' '. area1 area1 .' '. area2 area3 .' '. area4 area5 .' '. area4 area5 .' '. area6 area7 .' '. area6 area7 .' '. texto2 texto2 .' '. area12 area12 .';
-        grid-gap: 10px;
+        grid-template-areas: '. texto1 texto1 .' '. area1 area1 .' '. area1 area1 .' '. area1 area1 .' '. area2 area3 .' '. area4 area5 .' '. area4 area5 .' '. area6 area7 .' '. area6 area7 .' '. texto2 texto2 .' 'area10 area12 area12 area9' 'area10 area11 area8 area8';
+        grid-gap: 0px;
+    }
+    .area10 {
+        background-image: url(../img/1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .area8 {
+        background-image: url(../img/4.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .area9 {
+        background-image: url(../img/5.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .area11 {
+        background-image: url(../img/3.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .area12 {
+        background-image: url(../img/2.png);
+        background-size: cover;
+        background-position: center;
     }
     #navfoot {
+        grid-template-columns: 1fr 1fr;
+        /*  grid-template-rows: ; */
         width: 900px;
+        grid-template-areas: 'lorem1foot circle';
+    }
+    .lorem2foot {
+        display: none;
+    }
+    .icono {
+        display: none;
+    }
+    a {
+        display: none;
+    }
+    #loremar1 {
+        position: relative;
+        top: 70px;
+        left: -100px;
+    }
+    #dummyar1 {
+        position: absolute;
+        top: 100px;
+        left: -100px;
+    }
+    #par1 {
+        position: absolute;
+        top: 130px;
+        left: -100px;
+        color: white;
     }
 }
