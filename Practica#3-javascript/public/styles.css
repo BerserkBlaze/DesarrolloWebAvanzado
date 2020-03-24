@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    background-color: black;
+}
+
+#picture1 {
+    width: 12%;
+}
+
+#picture2 {
+    width: 12%;
+}
+
+#picture3 {
+    width: 30%;
+}
+
+#picture4 {
+    width: 12%;
+}
+
+#picture5 {
+    width: 12%;
+}
+
+#picture6 {
+    width: 22%;
+}
+
+#picture7 {
+    width: 31.5%;
+}
+
+#picture8 {
+    width: 15%;
+    resize: both;
+}
+
+#picture9 {
+    width: 31.5%;
+}
+
+#picture10 {
+    width: 22%;
+}
+
+.arriba {
+    height: 220px;
+    resize: both;
+    padding: .5px;
+}
+
+.abajo {
+    height: 437px;
+    resize: both;
+    padding: .5px;
+}
