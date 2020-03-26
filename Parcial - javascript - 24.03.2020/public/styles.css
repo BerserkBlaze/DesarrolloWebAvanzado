@@ -13,30 +13,72 @@ html {
     background-color: white;
 }
 
-#app {
-    display: inline-block;
+h1 {
+    background: border-box;
 }
 
-#brand {
+.circulo {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
     position: absolute;
-    top: 0px;
+    left: 160px;
+    background-color: black;
+}
+
+#valido {
+    background-color: green;
+}
+
+#invalido {
+    background-color: red;
+}
+
+.ocultar {
+    display: none;
+}
+
+.boton {
+    position: absolute;
     left: 100px;
+    width: 54px;
+    height: 20px;
+    background-color: mediumaquamarine;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
-#licensePlate {
-    position: absolute;
+#botonV {
     top: 0px;
-    left: 200px;
 }
 
-#soatValidFrom {
-    position: absolute;
-    top: 0px;
-    left: 350px;
+#botonInv {
+    top: 50px;
 }
 
-#soatValidUntil {
-    position: absolute;
-    top: 0px;
-    left: 550px;
+#title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkcyan;
+}
+
+.elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 11em;
+    /* width: 1010px; */
+    height: 100px;
+    margin-left: 12%;
+}
+
+#nav1 {
+    background: powderblue;
+    height: 20px;
+    margin: 0;
+    word-spacing: 10em;
 }
